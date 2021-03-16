@@ -11,5 +11,9 @@ module IPDB
     def find(ipx, lang)
       @db.find ipx, lang
     end
+
+    def meta
+      @db.meta
+    end
   end
 end

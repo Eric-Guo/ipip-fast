@@ -3,6 +3,8 @@ require "json"
 
 module IPDB
   class Reader
+    attr_reader :meta
+
     def initialize(name)
       if name.nil? || !File.exists?(name)
         raise "You must specify 'database => ...' in your ipip filter (I looked for '#{name}')"
