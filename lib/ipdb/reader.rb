@@ -4,7 +4,6 @@ require "json"
 module IPDB
   class Reader
     def initialize(name)
-
       if name.nil? || !File.exists?(name)
         raise "You must specify 'database => ...' in your ipip filter (I looked for '#{name}')"
       end
@@ -32,7 +31,6 @@ module IPDB
       off = node * 8 + idx * 4
       @body[off..off+3].unpack('N')[0]
     end
-
 
     def find_node(ipv)
       addr = ipv.hton
@@ -64,7 +62,7 @@ module IPDB
       node
     end
 
-    def find(ipx,lang)
+    def find(ipx, lang)
       begin
         ipv = IPAddr.new ipx
       rescue => e

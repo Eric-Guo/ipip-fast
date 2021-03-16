@@ -23,7 +23,7 @@ Or install it yourself as:
 ```ruby
 require "ipdb-fast"
 
-db = IPDB.city "c:/work/ipdb/city.ipv4.ipdb"
+db = IPDB.city "/Users/guochunzhong/Downloads/ipipfreedb/ipipfree.ipdb"
 loc = db.find "1.1.1.1", "CN"
 puts loc
 ```
