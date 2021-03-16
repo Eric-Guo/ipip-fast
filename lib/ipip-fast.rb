@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 require_relative "ipip/fast/version"
+require_relative 'ipdb/city'
 
-module Ipip
-  module Fast
-    class Error < StandardError; end
-    puts "Fast IPIP"
+module IPDB
+  def self.city(name)
+    City.new name
   end
 end
