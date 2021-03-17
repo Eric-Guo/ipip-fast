@@ -1,6 +1,9 @@
 # IPIP fast !
 
-Same function as [ipip-ipdb](https://github.com/ipipdotnet/ipdb-ruby), only faster
+Same function as [ipip-ipdb](https://github.com/ipipdotnet/ipdb-ruby), only faster.
+
+Warning: in order to easier usage, if no ipdb file provide, will automatically using ipipfree version, according to the license, not allow use in commercial. [禁止用于商业用途](https://www.ipip.net/product/ip.html)
+
 
 ## Installation
 

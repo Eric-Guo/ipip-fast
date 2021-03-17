@@ -6,9 +6,12 @@ module IPDB
     attr_reader :meta
 
     def initialize(name)
-      if name.nil? || !File.exists?(name)
+      if name.nil?
+        name = "#{__dir__}/ipipfree.ipdb"
+      elsif !File.exists?(name)
         raise "You must specify 'database => ...' in your ipip filter (I looked for '#{name}')"
       end
+
       if !File.readable? name
         raise "ip database is not readable."
       end
