@@ -31,6 +31,10 @@ loc = db.find "1.1.1.1", "CN"
 puts loc
 ```
 
+## Use in the Rails
+
+See [commit](https://github.com/thape-cn/oauth2id/commit/eb5399dd89a4c1bf63b56f2cd2a76fb4af95068a)
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
