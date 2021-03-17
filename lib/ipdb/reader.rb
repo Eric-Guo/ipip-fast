@@ -34,7 +34,13 @@ module IPDB
       @body[off..off+3].unpack('N')[0]
     end
 
-    def find_node(ipv)
+    def find(ipx, lang)
+      begin
+        ipv = IPAddr.new ipx
+      rescue => e
+        return e.message
+      end
+
       addr = ipv.hton
       node = ipv.ipv4? ? 96 : 0
 
@@ -61,16 +67,6 @@ module IPDB
         end
       end
 
-      node
-    end
-
-    def find(ipx, lang)
-      begin
-        ipv = IPAddr.new ipx
-      rescue => e
-        return e.message
-      end
-      node = self.find_node ipv
       resolved = node - @node_count + @node_count * 8
       size = @body[resolved..resolved+1].unpack('n')[0]
 

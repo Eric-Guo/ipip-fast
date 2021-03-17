@@ -10,7 +10,11 @@ RubyProf.start
 
 db = IPDB.city '/Users/guochunzhong/Downloads/ipipfreedb/ipipfree.ipdb'
 puts db.meta
-puts db.find '1.1.1.1', 'CN'
+
+(1..250).each do |i|
+  loc = db.find "1.#{i}.1.1", 'CN'
+  puts loc.join(';')
+end
 
 result = RubyProf.stop
 
