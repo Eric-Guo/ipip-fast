@@ -1,3 +1,8 @@
+Code are licensed under the MIT license:
+
+ipipfree.ipdb is based on the https://www.ipip.net/product/ip.html usage.
+
+---
 The MIT License (MIT)
 
 Copyright (c) 2021 Eric-Guo

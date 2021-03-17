@@ -1,9 +1,8 @@
 # IPIP fast !
 
-Same function as [ipip-ipdb](https://github.com/ipipdotnet/ipdb-ruby), only faster.
+Same function as [ipip-ipdb](https://github.com/ipipdotnet/ipdb-ruby), only faster and easier.
 
-Warning: in order to easier usage, if no ipdb file provide, will automatically using ipipfree version, according to the license, not allow use in commercial. [禁止用于商业用途](https://www.ipip.net/product/ip.html)
-
+Warning: in order to easier usage, if no ipdb file provide, will automatically using ipipfree version, according to the ipip.net request, do not use in commercial. [禁止用于商业用途](https://www.ipip.net/product/ip.html)
 
 ## Installation
 
@@ -26,7 +25,8 @@ Or install it yourself as:
 ```ruby
 require "ipdb-fast"
 
-db = IPDB.city "/Users/guochunzhong/Downloads/ipipfreedb/ipipfree.ipdb"
+# db = IPDB.city "/Users/[user_name]/Downloads/ipipfreedb/ipipfree.ipdb"
+db = IPDB.city
 loc = db.find "1.1.1.1", "CN"
 puts loc
 ```
