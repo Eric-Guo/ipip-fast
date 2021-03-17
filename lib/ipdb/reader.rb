@@ -13,7 +13,7 @@ module IPDB
         raise "ip database is not readable."
       end
 
-      @data = File.binread name
+      @data = File.read name, encoding: 'ASCII-8BIT'
 
       meta_len = @data[0 ... 4].unpack('N')[0]
       meta_buf = @data[4 ... 4+meta_len]

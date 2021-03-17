@@ -7,6 +7,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     rake (13.0.3)
+    ruby-prof (0.18.0)
+    ruby-prof-flamegraph (0.3.0)
+      ruby-prof (~> 0.13)
 
 PLATFORMS
   x86_64-darwin-19
@@ -14,6 +17,7 @@ PLATFORMS
 DEPENDENCIES
   ipip-fast!
   rake (~> 13.0)
+  ruby-prof-flamegraph (>= 0.3.0)
 
 BUNDLED WITH
    2.2.14

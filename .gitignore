@@ -7,3 +7,5 @@
 /spec/reports/
 /tmp/
 ipip-fast.sublime-workspace
+*.flame
+*.svg
